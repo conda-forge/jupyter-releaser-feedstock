@@ -11,7 +11,7 @@ source:
   sha256: 43b165f4b4be9a9b906f08cb82c3fe0079cd01858d81b90ae27d5278f3d6a799
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - jupyter-releaser = jupyter_releaser.cli:main
@@ -29,13 +29,14 @@ requirements:
     - github-activity ~=0.2
     - importlib_resources
     - jsonschema >=3.0.1
+    - packaging
+    - pkginfo
     - pre-commit
     - pypiserver
     - pytest-check-links >=0.5
     - python >=3.7
     - requests
     - requests-cache
-    - setuptools ~=60.0
     - tbump >=6.7,<7
     - toml ~=0.10
     - twine
