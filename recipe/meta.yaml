@@ -33,7 +33,7 @@ requirements:
     - pkginfo
     - pre-commit
     - pypiserver
-    - pytest-check-links >=0.5
+    - pytest-check-links >=0.7
     - python >=3.7
     - requests
     - requests-cache
