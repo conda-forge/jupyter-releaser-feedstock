@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - hatchling >=0.25
+    - flit_core >=3.2
   run:
     - build
     - check-manifest
