@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - hatchling >=0.25
   run:
     - build
     - check-manifest
