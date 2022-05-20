@@ -1,5 +1,5 @@
 {% set name = "jupyter-releaser" %}
-{% set version = "0.21.0" %}
+{% set version = "0.22.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_releaser-{{ version }}.tar.gz
-  sha256: df5a1a6743f45ce1e2c079ffb3e74bfa3e8ff67896eced9726abfe060d737e77
+  sha256: ae972c1a6246690d699ae0acbfda84df8afc181b574b825e5f08c50cfebfd07d
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.7
-    - flit-core >=3.2
+    - hatchling >=1.0
   run:
     - build
     - check-manifest
