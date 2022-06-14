@@ -1,5 +1,5 @@
 {% set name = "jupyter-releaser" %}
-{% set version = "0.22.0" %}
+{% set version = "0.22.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_releaser-{{ version }}.tar.gz
-  sha256: ae972c1a6246690d699ae0acbfda84df8afc181b574b825e5f08c50cfebfd07d
+  sha256: 1c926e39b41126bb87757bbdee03955c171845dcd673047230359ec97e225b46
 
 build:
   number: 0
