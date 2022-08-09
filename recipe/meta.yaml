@@ -48,10 +48,14 @@ test:
     - jupyter_releaser
     - jupyter_releaser.actions
   commands:
-    - pip check
     - jupyter-releaser --help
+    - python -m pytest .
   requires:
     - pip
+    - fastapi
+    - pytest >=7.0
+    - pytest-mock
+    - uvicorn
 
 about:
   home: https://jupyter.org
