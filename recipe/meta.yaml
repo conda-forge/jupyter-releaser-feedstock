@@ -44,6 +44,8 @@ requirements:
     - twine
 
 test:
+  source_files:
+    - .
   imports:
     - jupyter_releaser
     - jupyter_releaser.actions
