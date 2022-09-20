@@ -1,5 +1,5 @@
 {% set name = "jupyter-releaser" %}
-{% set version = "0.24.1" %}
+{% set version = "0.24.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jupyter_releaser-{{ version }}.tar.gz
-  sha256: 78d3cd3f9f5911e908f541e5fa8a4a64557cabeada905c34f74062976850b603
+  sha256: 507c2761b4e6c4315ef9b9dce08c38f019b286e8c87439efcba5b2c6b70f5176
 
 build:
   number: 0
@@ -23,25 +23,20 @@ requirements:
     - python >=3.7
     - hatchling >=1.0
   run:
-    - build
-    - check-manifest
     - click
     - ghapi
     - github-activity ~=0.2
-    - hatchling >=1.0
+    - pipx
     - importlib_resources
     - jsonschema >=3.0.1
     - packaging
     - pkginfo
-    - pre-commit
     - pypiserver
     - pytest-check-links >=0.7
     - python >=3.7
     - requests
     - requests-cache
-    - tbump >=6.7,<7
     - toml ~=0.10
-    - twine
 
 test:
   imports:
