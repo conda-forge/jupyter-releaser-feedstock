@@ -39,13 +39,20 @@ requirements:
     - toml ~=0.10
 
 test:
+  source_files:
+    - tests
+  requires:
+    - fastapi
+    - pytest-cov
+    - pytest>=7.0
+    - pytest-mock
+    - uvicorn
   imports:
     - jupyter_releaser
     - jupyter_releaser.actions
   commands:
     - jupyter-releaser --help
-  requires:
-    - pip
+    - pytest -vv --cov jupyter_releaser --cov-report term-missing:skip-covered --no-cov-on-fail --cov-fail-under 70
 
 about:
   home: https://jupyter.org
