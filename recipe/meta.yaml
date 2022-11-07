@@ -29,10 +29,10 @@ requirements:
     - pipx
     - importlib_resources
     - jsonschema >=3.0.1
+    - mdformat
     - packaging
     - pkginfo
     - pypiserver
-    - pytest-check-links >=0.7
     - python >=3.7
     - requests
     - requests-cache
