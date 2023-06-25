@@ -24,7 +24,7 @@ requirements:
     - hatchling >=1.0
   run:
     - click
-    - ghapi
+    - ghapi <= 1.0.4
     - github-activity ~=0.2
     - pipx
     - importlib_resources
