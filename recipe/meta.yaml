@@ -11,7 +11,7 @@ source:
   sha256: 26eb3b83096be1dd8b1e5a2c2eff0d0735470a27903933a24a12e89844743261
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - jupyter-releaser = jupyter_releaser.cli:main
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - hatchling >=1.0
   run:
     - click
@@ -33,7 +33,7 @@ requirements:
     - packaging
     - pkginfo
     - pypiserver
-    - python >=3.7
+    - python >={{ python_min }}
     - requests
     - requests-cache
     - toml ~=0.10
@@ -46,6 +46,7 @@ test:
     - jupyter-releaser --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://jupyter.org
