@@ -1,17 +1,15 @@
-{% set name = "jupyter-releaser" %}
-{% set version = "1.8.5" %}
-
+{% set version = "1.8.6" %}
 
 package:
-  name: {{ name|lower }}
+  name: jupyter-releaser
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jupyter_releaser-{{ version }}.tar.gz
-  sha256: 26eb3b83096be1dd8b1e5a2c2eff0d0735470a27903933a24a12e89844743261
+  url: https://pypi.org/packages/source/j/jupyter-releaser/jupyter_releaser-{{ version }}.tar.gz
+  sha256: 14da52d2a5c4677107d7c929cbec266ec3ed8b75c5a71bbc19e4b5784027f690
 
 build:
-  number: 1
+  number: 0
   noarch: python
   entry_points:
     - jupyter-releaser = jupyter_releaser.cli:main
@@ -53,6 +51,7 @@ about:
   summary: Jupyter Releaser for Python and/or npm packages.
   license: BSD-3-Clause
   license_file: LICENSE
+  dev_url: https://github.com/jupyter-server/jupyter_releaser
 
 extra:
   recipe-maintainers:
