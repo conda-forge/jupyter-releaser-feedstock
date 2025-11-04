@@ -9,6 +9,8 @@ Package license: BSD-3-Clause
 
 Summary: Jupyter Releaser for Python and/or npm packages.
 
+Development: https://github.com/jupyter-server/jupyter_releaser
+
 Current build status
 ====================
 
