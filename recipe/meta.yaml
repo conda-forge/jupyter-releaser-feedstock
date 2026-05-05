@@ -26,7 +26,7 @@ requirements:
     - github-activity ~=0.2
     - pipx
     - importlib_resources
-    - jsonschema >=3.0.1
+    - jsonschema >=4.0.0
     - mdformat
     - packaging
     - pkginfo
