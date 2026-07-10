@@ -22,6 +22,7 @@ requirements:
     - hatchling >=1.0
   run:
     - click
+    - fastcore <2
     - ghapi <=1.0.4
     - github-activity ~=0.2
     - pipx
