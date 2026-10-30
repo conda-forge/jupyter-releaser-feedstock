@@ -21,7 +21,7 @@ requirements:
     - python {{ python_min }}
     - hatchling >=1.11
   run:
-    - click
+    - click <8.2.0
     - fastcore <2
     - ghapi <=1.0.4
     - github-activity >=1.1.6,<2
