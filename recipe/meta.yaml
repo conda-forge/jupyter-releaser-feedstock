@@ -31,7 +31,7 @@ requirements:
     - mdformat
     - packaging
     - pkginfo
-    - pypiserver
+    - pypiserver ==2.3.2
     - python >={{ python_min }}
     - requests
     - requests-cache
