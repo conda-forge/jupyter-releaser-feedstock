@@ -1,4 +1,4 @@
-{% set version = "1.11.3" %}
+{% set version = "1.12.0" %}
 
 package:
   name: jupyter-releaser
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/j/jupyter-releaser/jupyter_releaser-{{ version }}.tar.gz
-  sha256: 24fe018efdb7afb472863bcb315c0a2b8bf853cdedb6d430c90a806a75b08a09
+  sha256: e957dbf3b8c37d8251113b842350f82b4edb544a511b09ce031b6b44dab71879
 
 build:
   number: 0
