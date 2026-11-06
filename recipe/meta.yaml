@@ -31,10 +31,12 @@ requirements:
     - mdformat
     - packaging
     - pkginfo
+    - pypi-attestations >=0.0.31,<0.1
     - pypiserver ==2.3.2
     - python >={{ python_min }}
     - requests
     - requests-cache
+    - sigstore >=4.5,<5
     - toml ~=0.10
 
 test:
